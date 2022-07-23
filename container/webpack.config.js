@@ -8,15 +8,15 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        port: 8081
+        port: 8080
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'remoteName',
-            filename: 'remoteEntry.js',
-            exposes: {
-                './ProductsIndex': './src/index'
-            },
+            name: 'container',
+            remotes: {
+                productsFolder: 'remoteName@http://localhost:8081/remoteEntry.js',
+
+            }
         }),
         new HtmlWebpackPlugin({
             template: "./public/index.html"
