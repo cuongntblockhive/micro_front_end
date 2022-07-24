@@ -14,7 +14,8 @@ module.exports = {
         new ModuleFederationPlugin({
             name: 'container',
             remotes: {
-                productsFolder: 'remoteName@http://localhost:8081/remoteEntry.js',
+                products: 'remoteProducts@http://localhost:8081/remoteEntry.js',
+                cart: "remoteCart@http://localhost:8082/remoteEntry.js"
 
             }
         }),

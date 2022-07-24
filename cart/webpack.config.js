@@ -8,14 +8,14 @@ module.exports = {
         filename: 'bundle.js'
     },
     devServer: {
-        port: 8081
+        port: 8082
     },
     plugins: [
         new ModuleFederationPlugin({
-            name: 'remoteProducts',
+            name: 'remoteCart',
             filename: 'remoteEntry.js',
             exposes: {
-                './ProductsIndex': './src/index'
+                './CartIndex': './src/index'
             },
         }),
         new HtmlWebpackPlugin({
