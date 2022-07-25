@@ -1,3 +1,6 @@
-import 'products/ProductsIndex'
+import productMount from 'products/ProductsIndex'
 import 'cart/CartIndex'
-console.log("Container")
+
+const productListE = document.querySelector("#products")
+console.log("proidcurtListE", productListE)
+productMount(productListE)
