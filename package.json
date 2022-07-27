@@ -1,0 +1,22 @@
+{
+  "name": "micro_front_end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "all": "concurrently -c \"bgBlue,bgMagenta,bgCyan\" --names \" Cart,Container,Products\" \"cd cart && npm run start\" \"cd container && npm run start\" \"cd products && npm run start\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuongntblockhive/micro_front_end.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuongntblockhive/micro_front_end/issues"
+  },
+  "homepage": "https://github.com/cuongntblockhive/micro_front_end#readme",
+  "dependencies": {
+    "concurrently": "^7.3.0"
+  }
+}
