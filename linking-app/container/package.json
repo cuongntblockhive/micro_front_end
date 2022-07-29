@@ -1,5 +1,5 @@
 {
-  "name": "auth",
+  "name": "container",
   "version": "1.0.0",
   "scripts": {
     "start": "webpack server --config config/webpack.dev.js"
